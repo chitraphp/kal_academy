@@ -1,0 +1,17 @@
+1.For every open parenthesis or braces or brackets there should be a corresponding closing parenthesis on its right.
+2.The last open parenthesis should close first.
+
+
+Pseudocode:
+
+1.Find the length(length) of the expression(exp) to be examined.
+2.create a stack.
+3.for(i=0 to length-1){
+   if (exp[i] euals '{' or '[' '(')
+     push it to stack
+   else if(exp[i] equals '}' or ']' or ')'){
+     if((stack is empty) || exp[i] not  equals to top of the stack)
+       return false
+      else (pop the element from the stack)
+    }  
+5.return  stack is empty ? true:false      
